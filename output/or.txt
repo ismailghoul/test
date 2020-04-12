@@ -1,0 +1,117 @@
+
+Using TensorFlow backend.
+[INFO] loading images...
+
+[INFO] loading 20638 images
+2020-04-08 17:30:36.055958: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2
+2020-04-08 17:30:36.145601: I tensorflow/core/common_runtime/process_util.cc:147] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+[INFO] model summary...
+Model: "sequential_1"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+conv2d_1 (Conv2D)            (None, 61, 61, 16)        784
+_________________________________________________________________
+zero_padding2d_1 (ZeroPaddin (None, 63, 63, 16)        0
+_________________________________________________________________
+conv2d_2 (Conv2D)            (None, 60, 60, 16)        4112
+_________________________________________________________________
+max_pooling2d_1 (MaxPooling2 (None, 30, 30, 16)        0
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 30, 30, 16)        0
+_________________________________________________________________
+zero_padding2d_2 (ZeroPaddin (None, 32, 32, 16)        0
+_________________________________________________________________
+conv2d_3 (Conv2D)            (None, 30, 30, 32)        4640
+_________________________________________________________________
+conv2d_4 (Conv2D)            (None, 28, 28, 32)        9248
+_________________________________________________________________
+max_pooling2d_2 (MaxPooling2 (None, 14, 14, 32)        0
+_________________________________________________________________
+dropout_2 (Dropout)          (None, 14, 14, 32)        0
+_________________________________________________________________
+zero_padding2d_3 (ZeroPaddin (None, 16, 16, 32)        0
+_________________________________________________________________
+conv2d_5 (Conv2D)            (None, 14, 14, 64)        18496
+_________________________________________________________________
+conv2d_6 (Conv2D)            (None, 12, 12, 128)       73856
+_________________________________________________________________
+max_pooling2d_3 (MaxPooling2 (None, 6, 6, 128)         0
+_________________________________________________________________
+dropout_3 (Dropout)          (None, 6, 6, 128)         0
+_________________________________________________________________
+flatten_1 (Flatten)          (None, 4608)              0
+_________________________________________________________________
+dense_1 (Dense)              (None, 512)               2359808
+_________________________________________________________________
+dropout_4 (Dropout)          (None, 512)               0
+_________________________________________________________________
+dense_2 (Dense)              (None, 15)                7695
+=================================================================
+Total params: 2,478,639
+Trainable params: 2,478,639
+Non-trainable params: 0
+_________________________________________________________________
+[INFO] training network...
+Train on 15478 samples, validate on 5160 samples
+Epoch 1/20
+ - 142s - loss: 1.8489 - accuracy: 0.4019 - val_loss: 1.1606 - val_accuracy: 0.6178
+
+Epoch 2/20
+ - 131s - loss: 1.1653 - accuracy: 0.6109 - val_loss: 0.9343 - val_accuracy: 0.6791
+
+Epoch 3/20
+ - 131s - loss: 0.8400 - accuracy: 0.7180 - val_loss: 0.7093 - val_accuracy: 0.7566
+
+Epoch 4/20
+ - 131s - loss: 0.6464 - accuracy: 0.7786 - val_loss: 0.4697 - val_accuracy: 0.8391
+
+Epoch 5/20
+ - 130s - loss: 0.5601 - accuracy: 0.8076 - val_loss: 0.4528 - val_accuracy: 0.8430
+
+Epoch 6/20
+ - 130s - loss: 0.4841 - accuracy: 0.8356 - val_loss: 0.4477 - val_accuracy: 0.8444
+
+Epoch 7/20
+ - 130s - loss: 0.4314 - accuracy: 0.8501 - val_loss: 0.3762 - val_accuracy: 0.8661
+
+Epoch 8/20
+ - 130s - loss: 0.3746 - accuracy: 0.8716 - val_loss: 0.3521 - val_accuracy: 0.8816
+
+Epoch 9/20
+ - 130s - loss: 0.3573 - accuracy: 0.8745 - val_loss: 0.3922 - val_accuracy: 0.8703
+
+Epoch 10/20
+ - 130s - loss: 0.3282 - accuracy: 0.8840 - val_loss: 0.3632 - val_accuracy: 0.8769
+
+Epoch 11/20
+ - 130s - loss: 0.2976 - accuracy: 0.8983 - val_loss: 0.3151 - val_accuracy: 0.8884
+
+Epoch 12/20
+ - 129s - loss: 0.2744 - accuracy: 0.9030 - val_loss: 0.4091 - val_accuracy: 0.8620
+
+Epoch 13/20
+ - 130s - loss: 0.2635 - accuracy: 0.9063 - val_loss: 0.2469 - val_accuracy: 0.9143
+
+Epoch 14/20
+ - 130s - loss: 0.2611 - accuracy: 0.9069 - val_loss: 0.2720 - val_accuracy: 0.9105
+
+Epoch 15/20
+ - 772s - loss: 0.2432 - accuracy: 0.9176 - val_loss: 0.2529 - val_accuracy: 0.9176
+
+Epoch 16/20
+ - 141s - loss: 0.2264 - accuracy: 0.9219 - val_loss: 0.2720 - val_accuracy: 0.9112
+
+Epoch 17/20
+ - 135s - loss: 0.2119 - accuracy: 0.9276 - val_loss: 0.3078 - val_accuracy: 0.8977
+
+Epoch 18/20
+ - 134s - loss: 0.2065 - accuracy: 0.9323 - val_loss: 0.2229 - val_accuracy: 0.9291
+
+Epoch 19/20
+ - 152s - loss: 0.2058 - accuracy: 0.9274 - val_loss: 0.2885 - val_accuracy: 0.9076
+
+Epoch 20/20
+ - 149s - loss: 0.1984 - accuracy: 0.9315 - val_loss: 0.2056 - val_accuracy: 0.9324
+
+
