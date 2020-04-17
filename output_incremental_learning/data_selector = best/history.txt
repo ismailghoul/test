@@ -1,0 +1,883 @@
+Connected to pydev debugger (build 192.6817.19)
+Using TensorFlow backend.
+2020-04-15 10:25:21.134115: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2
+2020-04-15 10:25:21.140569: I tensorflow/core/common_runtime/process_util.cc:147] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+[Info] loading images from "Pepper_Bell_Bacterial_spot".........
+[Info] loading from        "Pepper_Bell_Bacterial_spot" 997 images
+[Info] loading images from "Pepper_Bell_healthy".........
+[Info] loading from        "Pepper_Bell_healthy" 1478 images
+[Info] training network for 2 classes....
+Train on 1856 samples, validate on 619 samples
+Epoch 1/20
+ - 18s - loss: 0.5607 - accuracy: 0.6934 - val_loss: 0.3132 - val_accuracy: 0.8853
+Epoch 2/20
+ - 16s - loss: 0.3546 - accuracy: 0.8615 - val_loss: 0.3210 - val_accuracy: 0.9176
+Epoch 3/20
+ - 16s - loss: 0.2666 - accuracy: 0.9106 - val_loss: 0.2164 - val_accuracy: 0.9208
+Epoch 4/20
+ - 16s - loss: 0.2527 - accuracy: 0.9030 - val_loss: 0.2987 - val_accuracy: 0.9192
+Epoch 5/20
+ - 16s - loss: 0.1598 - accuracy: 0.9526 - val_loss: 0.1832 - val_accuracy: 0.9370
+Epoch 6/20
+ - 15s - loss: 0.1098 - accuracy: 0.9596 - val_loss: 0.0874 - val_accuracy: 0.9822
+Epoch 7/20
+ - 16s - loss: 0.0950 - accuracy: 0.9671 - val_loss: 0.1308 - val_accuracy: 0.9499
+Epoch 8/20
+ - 16s - loss: 0.0590 - accuracy: 0.9838 - val_loss: 0.0455 - val_accuracy: 0.9903
+Epoch 9/20
+ - 16s - loss: 0.0280 - accuracy: 0.9941 - val_loss: 0.1146 - val_accuracy: 0.9628
+Epoch 10/20
+ - 16s - loss: 0.0453 - accuracy: 0.9855 - val_loss: 0.0465 - val_accuracy: 0.9919
+Epoch 11/20
+ - 15s - loss: 0.0364 - accuracy: 0.9892 - val_loss: 0.0562 - val_accuracy: 0.9871
+Epoch 12/20
+ - 16s - loss: 0.0972 - accuracy: 0.9607 - val_loss: 0.0547 - val_accuracy: 0.9871
+Epoch 13/20
+ - 16s - loss: 0.0495 - accuracy: 0.9828 - val_loss: 0.0536 - val_accuracy: 0.9903
+Epoch 14/20
+ - 16s - loss: 0.0327 - accuracy: 0.9914 - val_loss: 0.0670 - val_accuracy: 0.9871
+Epoch 15/20
+ - 16s - loss: 0.0408 - accuracy: 0.9865 - val_loss: 0.0972 - val_accuracy: 0.9693
+Epoch 16/20
+ - 16s - loss: 0.0315 - accuracy: 0.9898 - val_loss: 0.0869 - val_accuracy: 0.9838
+Epoch 17/20
+ - 16s - loss: 0.0308 - accuracy: 0.9903 - val_loss: 0.0511 - val_accuracy: 0.9887
+Epoch 18/20
+ - 16s - loss: 0.0175 - accuracy: 0.9946 - val_loss: 0.0671 - val_accuracy: 0.9903
+Epoch 19/20
+ - 16s - loss: 0.0094 - accuracy: 0.9978 - val_loss: 0.0944 - val_accuracy: 0.9838
+Epoch 20/20
+ - 16s - loss: 0.0285 - accuracy: 0.9903 - val_loss: 0.0939 - val_accuracy: 0.9822
+[INFO] evaluating network...
+                            precision    recall  f1-score   support
+
+Pepper_Bell_Bacterial_spot       1.00      0.96      0.98       239
+       Pepper_Bell_healthy       0.97      1.00      0.99       380
+
+                  accuracy                           0.98       619
+                 macro avg       0.98      0.98      0.98       619
+              weighted avg       0.98      0.98      0.98       619
+
+[Info] from Pepper_Bell_Bacterial_spot select 151/758 samples for incremental learning...
+151
+[Info] from Pepper_Bell_healthy select 219/1098 samples for incremental learning...
+219
+[Info] loading images from "Potato_Early_blight".........
+[Info] loading from        "Potato_Early_blight" 1000 images
+[Info] training network for 3 classes....
+Train on 1369 samples, validate on 869 samples
+Epoch 1/20
+ - 14s - loss: 1.0001 - accuracy: 0.5303 - val_loss: 0.8869 - val_accuracy: 0.6157
+Epoch 2/20
+ - 12s - loss: 0.7201 - accuracy: 0.7020 - val_loss: 0.5819 - val_accuracy: 0.7376
+Epoch 3/20
+ - 12s - loss: 0.4762 - accuracy: 0.8349 - val_loss: 0.5968 - val_accuracy: 0.7503
+Epoch 4/20
+ - 12s - loss: 0.3337 - accuracy: 0.8758 - val_loss: 0.3192 - val_accuracy: 0.8711
+Epoch 5/20
+ - 12s - loss: 0.2919 - accuracy: 0.8853 - val_loss: 0.2685 - val_accuracy: 0.8941
+Epoch 6/20
+ - 12s - loss: 0.2694 - accuracy: 0.9065 - val_loss: 0.3679 - val_accuracy: 0.8562
+Epoch 7/20
+ - 12s - loss: 0.2432 - accuracy: 0.9160 - val_loss: 0.1802 - val_accuracy: 0.9390
+Epoch 8/20
+ - 12s - loss: 0.1828 - accuracy: 0.9321 - val_loss: 0.2405 - val_accuracy: 0.9079
+Epoch 9/20
+ - 12s - loss: 0.1777 - accuracy: 0.9364 - val_loss: 0.1338 - val_accuracy: 0.9471
+Epoch 10/20
+ - 12s - loss: 0.1456 - accuracy: 0.9467 - val_loss: 0.1356 - val_accuracy: 0.9563
+Epoch 11/20
+ - 12s - loss: 0.0878 - accuracy: 0.9730 - val_loss: 0.0661 - val_accuracy: 0.9724
+Epoch 12/20
+ - 12s - loss: 0.1185 - accuracy: 0.9540 - val_loss: 0.0782 - val_accuracy: 0.9712
+Epoch 13/20
+ - 13s - loss: 0.0815 - accuracy: 0.9701 - val_loss: 0.0902 - val_accuracy: 0.9643
+Epoch 14/20
+ - 12s - loss: 0.0720 - accuracy: 0.9774 - val_loss: 0.0857 - val_accuracy: 0.9747
+Epoch 15/20
+ - 13s - loss: 0.1126 - accuracy: 0.9584 - val_loss: 0.0572 - val_accuracy: 0.9873
+Epoch 16/20
+ - 12s - loss: 0.0585 - accuracy: 0.9759 - val_loss: 0.0395 - val_accuracy: 0.9839
+Epoch 17/20
+ - 12s - loss: 0.0606 - accuracy: 0.9774 - val_loss: 0.0599 - val_accuracy: 0.9816
+Epoch 18/20
+ - 12s - loss: 0.0739 - accuracy: 0.9766 - val_loss: 0.0419 - val_accuracy: 0.9816
+Epoch 19/20
+ - 12s - loss: 0.0298 - accuracy: 0.9883 - val_loss: 0.0396 - val_accuracy: 0.9816
+Epoch 20/20
+ - 12s - loss: 0.0477 - accuracy: 0.9795 - val_loss: 0.0221 - val_accuracy: 0.9942
+[INFO] evaluating network...
+                            precision    recall  f1-score   support
+
+Pepper_Bell_Bacterial_spot       0.99      0.99      0.99       239
+       Pepper_Bell_healthy       1.00      1.00      1.00       380
+       Potato_Early_blight       0.99      0.99      0.99       250
+
+                  accuracy                           0.99       869
+                 macro avg       0.99      0.99      0.99       869
+              weighted avg       0.99      0.99      0.99       869
+
+[Info] from Potato_Early_blight select 150/750 samples for incremental learning...
+150
+[Info] loading images from "Potato_Healthy".........
+[Info] loading from        "Potato_Healthy" 152 images
+[Info] training network for 4 classes....
+Train on 983 samples, validate on 907 samples
+Epoch 1/20
+ - 11s - loss: 0.7523 - accuracy: 0.7386 - val_loss: 0.5024 - val_accuracy: 0.8159
+Epoch 2/20
+ - 10s - loss: 0.5757 - accuracy: 0.7803 - val_loss: 0.5482 - val_accuracy: 0.7398
+Epoch 3/20
+ - 10s - loss: 0.4777 - accuracy: 0.8128 - val_loss: 0.2406 - val_accuracy: 0.9184
+Epoch 4/20
+ - 9s - loss: 0.3501 - accuracy: 0.8637 - val_loss: 0.1940 - val_accuracy: 0.9372
+Epoch 5/20
+ - 10s - loss: 0.3220 - accuracy: 0.8698 - val_loss: 0.2435 - val_accuracy: 0.9195
+Epoch 6/20
+ - 10s - loss: 0.2315 - accuracy: 0.9034 - val_loss: 0.2397 - val_accuracy: 0.9151
+Epoch 7/20
+ - 10s - loss: 0.2905 - accuracy: 0.8911 - val_loss: 0.1680 - val_accuracy: 0.9405
+Epoch 8/20
+ - 9s - loss: 0.3109 - accuracy: 0.8932 - val_loss: 0.1478 - val_accuracy: 0.9691
+Epoch 9/20
+ - 10s - loss: 0.1884 - accuracy: 0.9166 - val_loss: 0.0779 - val_accuracy: 0.9757
+Epoch 10/20
+ - 10s - loss: 0.2090 - accuracy: 0.9156 - val_loss: 0.1105 - val_accuracy: 0.9658
+Epoch 11/20
+ - 10s - loss: 0.1970 - accuracy: 0.9156 - val_loss: 0.1006 - val_accuracy: 0.9680
+Epoch 12/20
+ - 10s - loss: 0.1603 - accuracy: 0.9339 - val_loss: 0.1616 - val_accuracy: 0.9438
+Epoch 13/20
+ - 10s - loss: 0.1776 - accuracy: 0.9359 - val_loss: 0.0900 - val_accuracy: 0.9702
+Epoch 14/20
+ - 10s - loss: 0.1479 - accuracy: 0.9440 - val_loss: 0.0686 - val_accuracy: 0.9779
+Epoch 15/20
+ - 10s - loss: 0.1262 - accuracy: 0.9522 - val_loss: 0.0657 - val_accuracy: 0.9746
+Epoch 16/20
+ - 10s - loss: 0.1093 - accuracy: 0.9481 - val_loss: 0.0600 - val_accuracy: 0.9791
+Epoch 17/20
+ - 10s - loss: 0.1281 - accuracy: 0.9542 - val_loss: 0.0561 - val_accuracy: 0.9791
+Epoch 18/20
+ - 10s - loss: 0.1018 - accuracy: 0.9552 - val_loss: 0.0548 - val_accuracy: 0.9813
+Epoch 19/20
+ - 10s - loss: 0.1010 - accuracy: 0.9573 - val_loss: 0.0609 - val_accuracy: 0.9757
+Epoch 20/20
+ - 10s - loss: 0.1066 - accuracy: 0.9624 - val_loss: 0.0617 - val_accuracy: 0.9791
+[INFO] evaluating network...
+                            precision    recall  f1-score   support
+
+Pepper_Bell_Bacterial_spot       1.00      0.99      0.99       239
+       Pepper_Bell_healthy       0.97      0.98      0.98       380
+       Potato_Early_blight       0.99      1.00      0.99       250
+            Potato_Healthy       0.85      0.74      0.79        38
+
+                  accuracy                           0.98       907
+                 macro avg       0.95      0.93      0.94       907
+              weighted avg       0.98      0.98      0.98       907
+
+[Info] from Potato_Healthy select 22/114 samples for incremental learning...
+22
+[Info] loading images from "Potato_Late_blight".........
+[Info] loading from        "Potato_Late_blight" 1000 images
+[Info] training network for 5 classes....
+Train on 1657 samples, validate on 1157 samples
+Epoch 1/20
+ - 17s - loss: 1.1346 - accuracy: 0.5914 - val_loss: 0.7700 - val_accuracy: 0.6551
+Epoch 2/20
+ - 15s - loss: 0.5556 - accuracy: 0.7996 - val_loss: 0.5370 - val_accuracy: 0.8289
+Epoch 3/20
+ - 15s - loss: 0.4034 - accuracy: 0.8509 - val_loss: 0.2234 - val_accuracy: 0.9231
+Epoch 4/20
+ - 15s - loss: 0.3061 - accuracy: 0.8980 - val_loss: 0.2571 - val_accuracy: 0.9049
+Epoch 5/20
+ - 15s - loss: 0.2650 - accuracy: 0.9028 - val_loss: 0.1916 - val_accuracy: 0.9352
+Epoch 6/20
+ - 15s - loss: 0.2426 - accuracy: 0.9167 - val_loss: 0.2732 - val_accuracy: 0.8989
+Epoch 7/20
+ - 15s - loss: 0.2739 - accuracy: 0.9028 - val_loss: 0.2778 - val_accuracy: 0.9188
+Epoch 8/20
+ - 15s - loss: 0.2502 - accuracy: 0.9119 - val_loss: 0.1251 - val_accuracy: 0.9585
+Epoch 9/20
+ - 15s - loss: 0.1903 - accuracy: 0.9366 - val_loss: 0.1339 - val_accuracy: 0.9611
+Epoch 10/20
+ - 15s - loss: 0.1081 - accuracy: 0.9656 - val_loss: 0.1035 - val_accuracy: 0.9637
+Epoch 11/20
+ - 15s - loss: 0.1245 - accuracy: 0.9493 - val_loss: 0.0982 - val_accuracy: 0.9602
+Epoch 12/20
+ - 16s - loss: 0.1307 - accuracy: 0.9596 - val_loss: 0.0846 - val_accuracy: 0.9741
+Epoch 13/20
+ - 15s - loss: 0.0844 - accuracy: 0.9716 - val_loss: 0.0596 - val_accuracy: 0.9862
+Epoch 14/20
+ - 15s - loss: 0.0878 - accuracy: 0.9674 - val_loss: 0.0528 - val_accuracy: 0.9810
+Epoch 15/20
+ - 15s - loss: 0.0770 - accuracy: 0.9704 - val_loss: 0.0480 - val_accuracy: 0.9888
+Epoch 16/20
+ - 15s - loss: 0.0703 - accuracy: 0.9747 - val_loss: 0.2445 - val_accuracy: 0.9309
+Epoch 17/20
+ - 15s - loss: 0.1873 - accuracy: 0.9403 - val_loss: 0.0911 - val_accuracy: 0.9697
+Epoch 18/20
+ - 15s - loss: 0.0860 - accuracy: 0.9698 - val_loss: 0.0525 - val_accuracy: 0.9836
+Epoch 19/20
+ - 15s - loss: 0.1146 - accuracy: 0.9686 - val_loss: 0.0769 - val_accuracy: 0.9741
+Epoch 20/20
+ - 15s - loss: 0.0611 - accuracy: 0.9777 - val_loss: 0.0423 - val_accuracy: 0.9888
+[INFO] evaluating network...
+                            precision    recall  f1-score   support
+
+Pepper_Bell_Bacterial_spot       1.00      1.00      1.00       239
+       Pepper_Bell_healthy       0.98      1.00      0.99       380
+       Potato_Early_blight       0.99      1.00      0.99       250
+            Potato_Healthy       1.00      0.87      0.93        38
+        Potato_Late_blight       1.00      0.98      0.99       250
+
+                  accuracy                           0.99      1157
+                 macro avg       0.99      0.97      0.98      1157
+              weighted avg       0.99      0.99      0.99      1157
+
+[Info] from Potato_Late_blight select 150/750 samples for incremental learning...
+150
+[Info] loading images from "Tomato_Bacterial_spot".........
+[Info] loading from        "Tomato_Bacterial_spot" 2127 images
+[Info] training network for 6 classes....
+Train on 2752 samples, validate on 1689 samples
+Epoch 1/20
+ - 27s - loss: 0.8169 - accuracy: 0.7297 - val_loss: 0.9379 - val_accuracy: 0.6335
+Epoch 2/20
+ - 25s - loss: 0.4083 - accuracy: 0.8557 - val_loss: 0.3988 - val_accuracy: 0.8680
+Epoch 3/20
+ - 25s - loss: 0.2965 - accuracy: 0.8990 - val_loss: 0.4112 - val_accuracy: 0.8555
+Epoch 4/20
+ - 25s - loss: 0.2648 - accuracy: 0.9062 - val_loss: 0.2651 - val_accuracy: 0.9029
+Epoch 5/20
+ - 25s - loss: 0.2380 - accuracy: 0.9255 - val_loss: 0.3809 - val_accuracy: 0.8532
+Epoch 6/20
+ - 25s - loss: 0.1990 - accuracy: 0.9379 - val_loss: 0.4057 - val_accuracy: 0.8615
+Epoch 7/20
+ - 25s - loss: 0.1690 - accuracy: 0.9448 - val_loss: 0.4119 - val_accuracy: 0.8532
+Epoch 8/20
+ - 25s - loss: 0.1489 - accuracy: 0.9509 - val_loss: 0.1795 - val_accuracy: 0.9378
+Epoch 9/20
+ - 25s - loss: 0.1468 - accuracy: 0.9437 - val_loss: 0.1417 - val_accuracy: 0.9473
+Epoch 10/20
+ - 25s - loss: 0.1124 - accuracy: 0.9626 - val_loss: 0.1040 - val_accuracy: 0.9651
+Epoch 11/20
+ - 25s - loss: 0.1139 - accuracy: 0.9633 - val_loss: 0.1395 - val_accuracy: 0.9532
+Epoch 12/20
+ - 25s - loss: 0.1186 - accuracy: 0.9615 - val_loss: 0.1693 - val_accuracy: 0.9426
+Epoch 13/20
+ - 25s - loss: 0.1146 - accuracy: 0.9637 - val_loss: 0.1277 - val_accuracy: 0.9615
+Epoch 14/20
+ - 25s - loss: 0.1094 - accuracy: 0.9644 - val_loss: 0.1548 - val_accuracy: 0.9426
+Epoch 15/20
+ - 25s - loss: 0.0776 - accuracy: 0.9764 - val_loss: 0.0525 - val_accuracy: 0.9864
+Epoch 16/20
+ - 26s - loss: 0.0777 - accuracy: 0.9742 - val_loss: 0.0871 - val_accuracy: 0.9674
+Epoch 17/20
+ - 25s - loss: 0.1113 - accuracy: 0.9618 - val_loss: 0.0713 - val_accuracy: 0.9734
+Epoch 18/20
+ - 25s - loss: 0.0728 - accuracy: 0.9742 - val_loss: 0.0724 - val_accuracy: 0.9769
+Epoch 19/20
+ - 25s - loss: 0.0827 - accuracy: 0.9713 - val_loss: 0.0947 - val_accuracy: 0.9692
+Epoch 20/20
+ - 25s - loss: 0.0670 - accuracy: 0.9767 - val_loss: 0.0636 - val_accuracy: 0.9828
+[INFO] evaluating network...
+                            precision    recall  f1-score   support
+
+Pepper_Bell_Bacterial_spot       0.99      0.97      0.98       239
+       Pepper_Bell_healthy       0.94      1.00      0.97       380
+       Potato_Early_blight       1.00      0.99      0.99       250
+            Potato_Healthy       1.00      0.68      0.81        38
+        Potato_Late_blight       0.99      1.00      0.99       250
+     Tomato_Bacterial_spot       1.00      0.99      0.99       532
+
+                  accuracy                           0.98      1689
+                 macro avg       0.99      0.94      0.96      1689
+              weighted avg       0.98      0.98      0.98      1689
+
+[Info] from Tomato_Bacterial_spot select 319/1595 samples for incremental learning...
+319
+[Info] loading images from "Tomato_Early_blight".........
+[Info] loading from        "Tomato_Early_blight" 1000 images
+[Info] training network for 7 classes....
+Train on 2439 samples, validate on 1939 samples
+Epoch 1/20
+ - 25s - loss: 1.1133 - accuracy: 0.6011 - val_loss: 0.9476 - val_accuracy: 0.6493
+Epoch 2/20
+ - 23s - loss: 0.7051 - accuracy: 0.7306 - val_loss: 0.6170 - val_accuracy: 0.7963
+Epoch 3/20
+ - 23s - loss: 0.5261 - accuracy: 0.8093 - val_loss: 0.4180 - val_accuracy: 0.8473
+Epoch 4/20
+ - 23s - loss: 0.4660 - accuracy: 0.8196 - val_loss: 0.3796 - val_accuracy: 0.8592
+Epoch 5/20
+ - 24s - loss: 0.4285 - accuracy: 0.8339 - val_loss: 0.3151 - val_accuracy: 0.8876
+Epoch 6/20
+ - 24s - loss: 0.3708 - accuracy: 0.8606 - val_loss: 0.2275 - val_accuracy: 0.9180
+Epoch 7/20
+ - 23s - loss: 0.3541 - accuracy: 0.8754 - val_loss: 0.1477 - val_accuracy: 0.9531
+Epoch 8/20
+ - 24s - loss: 0.2909 - accuracy: 0.8901 - val_loss: 0.3440 - val_accuracy: 0.8788
+Epoch 9/20
+ - 24s - loss: 0.2882 - accuracy: 0.8983 - val_loss: 0.1277 - val_accuracy: 0.9613
+Epoch 10/20
+ - 23s - loss: 0.2281 - accuracy: 0.9196 - val_loss: 0.1113 - val_accuracy: 0.9598
+Epoch 11/20
+ - 24s - loss: 0.2730 - accuracy: 0.9028 - val_loss: 0.1122 - val_accuracy: 0.9649
+Epoch 12/20
+ - 23s - loss: 0.2101 - accuracy: 0.9254 - val_loss: 0.1298 - val_accuracy: 0.9526
+Epoch 13/20
+ - 23s - loss: 0.1863 - accuracy: 0.9336 - val_loss: 0.1093 - val_accuracy: 0.9613
+Epoch 14/20
+ - 23s - loss: 0.1764 - accuracy: 0.9303 - val_loss: 0.0807 - val_accuracy: 0.9789
+Epoch 15/20
+ - 23s - loss: 0.1801 - accuracy: 0.9336 - val_loss: 0.0917 - val_accuracy: 0.9706
+Epoch 16/20
+ - 23s - loss: 0.1817 - accuracy: 0.9364 - val_loss: 0.1385 - val_accuracy: 0.9526
+Epoch 17/20
+ - 23s - loss: 0.1957 - accuracy: 0.9266 - val_loss: 0.1832 - val_accuracy: 0.9278
+Epoch 18/20
+ - 23s - loss: 0.1513 - accuracy: 0.9446 - val_loss: 0.0624 - val_accuracy: 0.9830
+Epoch 19/20
+ - 23s - loss: 0.1459 - accuracy: 0.9492 - val_loss: 0.0691 - val_accuracy: 0.9804
+Epoch 20/20
+ - 23s - loss: 0.1435 - accuracy: 0.9487 - val_loss: 0.0788 - val_accuracy: 0.9809
+[INFO] evaluating network...
+                            precision    recall  f1-score   support
+
+Pepper_Bell_Bacterial_spot       1.00      0.95      0.97       239
+       Pepper_Bell_healthy       1.00      0.99      1.00       380
+       Potato_Early_blight       1.00      1.00      1.00       250
+            Potato_Healthy       0.97      1.00      0.99        38
+        Potato_Late_blight       1.00      0.99      0.99       250
+     Tomato_Bacterial_spot       0.96      1.00      0.98       532
+       Tomato_Early_blight       0.95      0.93      0.94       250
+
+                  accuracy                           0.98      1939
+                 macro avg       0.98      0.98      0.98      1939
+              weighted avg       0.98      0.98      0.98      1939
+
+[Info] from Tomato_Early_blight select 150/750 samples for incremental learning...
+150
+[Info] loading images from "Tomato_Healthy".........
+[Info] loading from        "Tomato_Healthy" 1591 images
+[Info] training network for 8 classes....
+Train on 3132 samples, validate on 2337 samples
+Epoch 1/20
+ - 32s - loss: 1.0012 - accuracy: 0.7050 - val_loss: 0.6242 - val_accuracy: 0.7822
+Epoch 2/20
+ - 30s - loss: 0.4500 - accuracy: 0.8563 - val_loss: 0.2798 - val_accuracy: 0.8986
+Epoch 3/20
+ - 30s - loss: 0.3517 - accuracy: 0.8905 - val_loss: 0.3046 - val_accuracy: 0.8990
+Epoch 4/20
+ - 30s - loss: 0.2411 - accuracy: 0.9199 - val_loss: 0.2848 - val_accuracy: 0.9140
+Epoch 5/20
+ - 30s - loss: 0.2132 - accuracy: 0.9301 - val_loss: 0.3897 - val_accuracy: 0.8768
+Epoch 6/20
+ - 30s - loss: 0.2019 - accuracy: 0.9314 - val_loss: 0.1254 - val_accuracy: 0.9598
+Epoch 7/20
+ - 30s - loss: 0.2078 - accuracy: 0.9298 - val_loss: 0.2953 - val_accuracy: 0.9110
+Epoch 8/20
+ - 30s - loss: 0.1435 - accuracy: 0.9502 - val_loss: 0.1394 - val_accuracy: 0.9504
+Epoch 9/20
+ - 30s - loss: 0.1532 - accuracy: 0.9483 - val_loss: 0.1091 - val_accuracy: 0.9683
+Epoch 10/20
+ - 30s - loss: 0.1387 - accuracy: 0.9511 - val_loss: 0.2493 - val_accuracy: 0.9255
+Epoch 11/20
+ - 30s - loss: 0.1294 - accuracy: 0.9524 - val_loss: 0.0834 - val_accuracy: 0.9739
+Epoch 12/20
+ - 30s - loss: 0.1801 - accuracy: 0.9403 - val_loss: 0.1163 - val_accuracy: 0.9671
+Epoch 13/20
+ - 30s - loss: 0.1086 - accuracy: 0.9598 - val_loss: 0.3341 - val_accuracy: 0.9037
+Epoch 14/20
+ - 30s - loss: 0.1141 - accuracy: 0.9620 - val_loss: 0.0915 - val_accuracy: 0.9718
+Epoch 15/20
+ - 30s - loss: 0.0760 - accuracy: 0.9745 - val_loss: 0.0435 - val_accuracy: 0.9872
+Epoch 16/20
+ - 30s - loss: 0.1197 - accuracy: 0.9610 - val_loss: 0.1308 - val_accuracy: 0.9504
+Epoch 17/20
+ - 30s - loss: 0.0917 - accuracy: 0.9693 - val_loss: 0.0447 - val_accuracy: 0.9855
+Epoch 18/20
+ - 30s - loss: 0.0736 - accuracy: 0.9735 - val_loss: 0.0502 - val_accuracy: 0.9846
+Epoch 19/20
+ - 30s - loss: 0.0776 - accuracy: 0.9735 - val_loss: 0.0590 - val_accuracy: 0.9829
+Epoch 20/20
+ - 30s - loss: 0.0702 - accuracy: 0.9745 - val_loss: 0.0336 - val_accuracy: 0.9919
+[INFO] evaluating network...
+                            precision    recall  f1-score   support
+
+Pepper_Bell_Bacterial_spot       1.00      0.99      0.99       239
+       Pepper_Bell_healthy       1.00      0.99      1.00       380
+       Potato_Early_blight       1.00      0.98      0.99       250
+            Potato_Healthy       0.93      1.00      0.96        38
+        Potato_Late_blight       1.00      1.00      1.00       250
+     Tomato_Bacterial_spot       0.99      1.00      0.99       532
+       Tomato_Early_blight       1.00      0.98      0.99       250
+            Tomato_Healthy       0.98      1.00      0.99       398
+
+                  accuracy                           0.99      2337
+                 macro avg       0.99      0.99      0.99      2337
+              weighted avg       0.99      0.99      0.99      2337
+
+[Info] from Tomato_Healthy select 238/1193 samples for incremental learning...
+238
+[Info] loading images from "Tomato_Late_blight".........
+[Info] loading from        "Tomato_Late_blight" 1909 images
+[Info] training network for 9 classes....
+Train on 3768 samples, validate on 2815 samples
+Epoch 1/20
+ - 38s - loss: 1.0898 - accuracy: 0.6518 - val_loss: 0.6203 - val_accuracy: 0.8082
+Epoch 2/20
+ - 36s - loss: 0.5711 - accuracy: 0.7991 - val_loss: 0.4481 - val_accuracy: 0.8423
+Epoch 3/20
+ - 36s - loss: 0.4369 - accuracy: 0.8424 - val_loss: 0.3188 - val_accuracy: 0.8806
+Epoch 4/20
+ - 36s - loss: 0.3647 - accuracy: 0.8702 - val_loss: 0.2741 - val_accuracy: 0.9091
+Epoch 5/20
+ - 36s - loss: 0.3390 - accuracy: 0.8763 - val_loss: 0.1981 - val_accuracy: 0.9300
+Epoch 6/20
+ - 36s - loss: 0.3269 - accuracy: 0.8742 - val_loss: 0.2188 - val_accuracy: 0.9240
+Epoch 7/20
+ - 36s - loss: 0.2912 - accuracy: 0.8978 - val_loss: 0.2213 - val_accuracy: 0.9190
+Epoch 8/20
+ - 36s - loss: 0.2674 - accuracy: 0.9015 - val_loss: 0.1703 - val_accuracy: 0.9442
+Epoch 9/20
+ - 36s - loss: 0.2420 - accuracy: 0.9137 - val_loss: 0.1486 - val_accuracy: 0.9503
+Epoch 10/20
+ - 38s - loss: 0.2458 - accuracy: 0.9095 - val_loss: 0.1172 - val_accuracy: 0.9655
+Epoch 11/20
+ - 44s - loss: 0.2220 - accuracy: 0.9196 - val_loss: 0.1417 - val_accuracy: 0.9545
+Epoch 12/20
+ - 36s - loss: 0.2140 - accuracy: 0.9260 - val_loss: 0.1587 - val_accuracy: 0.9492
+Epoch 13/20
+ - 41s - loss: 0.2093 - accuracy: 0.9278 - val_loss: 0.1134 - val_accuracy: 0.9666
+Epoch 14/20
+ - 37s - loss: 0.1723 - accuracy: 0.9403 - val_loss: 0.1151 - val_accuracy: 0.9599
+Epoch 15/20
+ - 37s - loss: 0.1861 - accuracy: 0.9347 - val_loss: 0.1224 - val_accuracy: 0.9606
+Epoch 16/20
+ - 38s - loss: 0.1567 - accuracy: 0.9472 - val_loss: 0.0923 - val_accuracy: 0.9712
+Epoch 17/20
+ - 36s - loss: 0.1988 - accuracy: 0.9313 - val_loss: 0.0779 - val_accuracy: 0.9773
+Epoch 18/20
+ - 36s - loss: 0.1470 - accuracy: 0.9488 - val_loss: 0.0901 - val_accuracy: 0.9698
+Epoch 19/20
+ - 44s - loss: 0.1645 - accuracy: 0.9435 - val_loss: 0.0776 - val_accuracy: 0.9758
+Epoch 20/20
+ - 39s - loss: 0.1630 - accuracy: 0.9435 - val_loss: 0.0817 - val_accuracy: 0.9726
+[INFO] evaluating network...
+                            precision    recall  f1-score   support
+
+Pepper_Bell_Bacterial_spot       0.99      0.99      0.99       239
+       Pepper_Bell_healthy       1.00      1.00      1.00       380
+       Potato_Early_blight       0.96      0.99      0.98       250
+            Potato_Healthy       0.95      1.00      0.97        38
+        Potato_Late_blight       0.94      0.95      0.95       250
+     Tomato_Bacterial_spot       0.99      0.98      0.99       532
+       Tomato_Early_blight       0.97      0.94      0.95       250
+            Tomato_Healthy       0.99      1.00      0.99       398
+        Tomato_Late_blight       0.93      0.93      0.93       478
+
+                  accuracy                           0.97      2815
+                 macro avg       0.97      0.98      0.97      2815
+              weighted avg       0.97      0.97      0.97      2815
+
+[Info] from Tomato_Late_blight select 286/1431 samples for incremental learning...
+286
+[Info] loading images from "Tomato_Leaf_Mold".........
+[Info] loading from        "Tomato_Leaf_Mold" 952 images
+[Info] training network for 10 classes....
+Train on 3529 samples, validate on 3053 samples
+Epoch 1/20
+ - 58s - loss: 1.0238 - accuracy: 0.6699 - val_loss: 0.4449 - val_accuracy: 0.8349
+Epoch 2/20
+ - 37s - loss: 0.5893 - accuracy: 0.8084 - val_loss: 0.4816 - val_accuracy: 0.8192
+Epoch 3/20
+ - 36s - loss: 0.4327 - accuracy: 0.8560 - val_loss: 0.2442 - val_accuracy: 0.9184
+Epoch 4/20
+ - 39s - loss: 0.3644 - accuracy: 0.8745 - val_loss: 0.2697 - val_accuracy: 0.9152
+Epoch 5/20
+ - 39s - loss: 0.3555 - accuracy: 0.8762 - val_loss: 0.2155 - val_accuracy: 0.9260
+Epoch 6/20
+ - 59s - loss: 0.3246 - accuracy: 0.8952 - val_loss: 0.1443 - val_accuracy: 0.9496
+Epoch 7/20
+ - 48s - loss: 0.2779 - accuracy: 0.9031 - val_loss: 0.1467 - val_accuracy: 0.9541
+Epoch 8/20
+ - 47s - loss: 0.2434 - accuracy: 0.9158 - val_loss: 0.1138 - val_accuracy: 0.9594
+Epoch 9/20
+ - 47s - loss: 0.2218 - accuracy: 0.9204 - val_loss: 0.1369 - val_accuracy: 0.9571
+Epoch 10/20
+ - 46s - loss: 0.2556 - accuracy: 0.9167 - val_loss: 0.1186 - val_accuracy: 0.9650
+Epoch 11/20
+ - 48s - loss: 0.2420 - accuracy: 0.9201 - val_loss: 0.2007 - val_accuracy: 0.9260
+Epoch 12/20
+ - 48s - loss: 0.2126 - accuracy: 0.9317 - val_loss: 0.0635 - val_accuracy: 0.9846
+Epoch 13/20
+ - 47s - loss: 0.2088 - accuracy: 0.9294 - val_loss: 0.1210 - val_accuracy: 0.9581
+Epoch 14/20
+ - 45s - loss: 0.1806 - accuracy: 0.9365 - val_loss: 0.0936 - val_accuracy: 0.9699
+Epoch 15/20
+ - 44s - loss: 0.1732 - accuracy: 0.9416 - val_loss: 0.0833 - val_accuracy: 0.9761
+Epoch 16/20
+ - 46s - loss: 0.1686 - accuracy: 0.9453 - val_loss: 0.0780 - val_accuracy: 0.9745
+Epoch 17/20
+ - 37s - loss: 0.2134 - accuracy: 0.9289 - val_loss: 0.1083 - val_accuracy: 0.9712
+Epoch 18/20
+ - 37s - loss: 0.1963 - accuracy: 0.9351 - val_loss: 0.0564 - val_accuracy: 0.9862
+Epoch 19/20
+ - 37s - loss: 0.1815 - accuracy: 0.9413 - val_loss: 0.1294 - val_accuracy: 0.9646
+Epoch 20/20
+ - 36s - loss: 0.1732 - accuracy: 0.9388 - val_loss: 0.0548 - val_accuracy: 0.9869
+[INFO] evaluating network...
+                            precision    recall  f1-score   support
+
+Pepper_Bell_Bacterial_spot       1.00      0.99      0.99       239
+       Pepper_Bell_healthy       1.00      0.99      1.00       380
+       Potato_Early_blight       1.00      1.00      1.00       250
+            Potato_Healthy       0.95      1.00      0.97        38
+        Potato_Late_blight       0.99      0.98      0.98       250
+     Tomato_Bacterial_spot       0.99      1.00      0.99       532
+       Tomato_Early_blight       0.98      0.98      0.98       250
+            Tomato_Healthy       0.99      1.00      0.99       398
+        Tomato_Late_blight       0.99      0.97      0.98       478
+          Tomato_Leaf_Mold       0.96      0.96      0.96       238
+
+                  accuracy                           0.99      3053
+                 macro avg       0.98      0.99      0.99      3053
+              weighted avg       0.99      0.99      0.99      3053
+
+[Info] from Tomato_Leaf_Mold select 142/714 samples for incremental learning...
+142
+[Info] loading images from "Tomato_Septoria_leaf_spot".........
+[Info] loading from        "Tomato_Septoria_leaf_spot" 1771 images
+[Info] training network for 11 classes....
+Train on 4381 samples, validate on 3496 samples
+Epoch 1/20
+ - 51s - loss: 1.1195 - accuracy: 0.6391 - val_loss: 0.4495 - val_accuracy: 0.8424
+Epoch 2/20
+ - 45s - loss: 0.6893 - accuracy: 0.7665 - val_loss: 0.3991 - val_accuracy: 0.8610
+Epoch 3/20
+ - 47s - loss: 0.5670 - accuracy: 0.7998 - val_loss: 0.3304 - val_accuracy: 0.8781
+Epoch 4/20
+ - 75s - loss: 0.5215 - accuracy: 0.8263 - val_loss: 0.4454 - val_accuracy: 0.8513
+Epoch 5/20
+ - 60s - loss: 0.4789 - accuracy: 0.8338 - val_loss: 0.2324 - val_accuracy: 0.9142
+Epoch 6/20
+ - 59s - loss: 0.3918 - accuracy: 0.8594 - val_loss: 0.2271 - val_accuracy: 0.9145
+Epoch 7/20
+ - 55s - loss: 0.3811 - accuracy: 0.8656 - val_loss: 0.2079 - val_accuracy: 0.9265
+Epoch 8/20
+ - 54s - loss: 0.3781 - accuracy: 0.8742 - val_loss: 0.2029 - val_accuracy: 0.9242
+Epoch 9/20
+ - 59s - loss: 0.3635 - accuracy: 0.8719 - val_loss: 0.1800 - val_accuracy: 0.9399
+Epoch 10/20
+ - 60s - loss: 0.3087 - accuracy: 0.8934 - val_loss: 0.1660 - val_accuracy: 0.9451
+Epoch 11/20
+ - 56s - loss: 0.3195 - accuracy: 0.8902 - val_loss: 0.1778 - val_accuracy: 0.9379
+Epoch 12/20
+ - 50s - loss: 0.3344 - accuracy: 0.8831 - val_loss: 0.1586 - val_accuracy: 0.9491
+Epoch 13/20
+ - 54s - loss: 0.2881 - accuracy: 0.8996 - val_loss: 0.1410 - val_accuracy: 0.9562
+Epoch 14/20
+ - 54s - loss: 0.2748 - accuracy: 0.8998 - val_loss: 0.2255 - val_accuracy: 0.9262
+Epoch 15/20
+ - 55s - loss: 0.2662 - accuracy: 0.9044 - val_loss: 0.1279 - val_accuracy: 0.9611
+Epoch 16/20
+ - 56s - loss: 0.2473 - accuracy: 0.9096 - val_loss: 0.1077 - val_accuracy: 0.9648
+Epoch 17/20
+ - 59s - loss: 0.3034 - accuracy: 0.8929 - val_loss: 0.1445 - val_accuracy: 0.9588
+Epoch 18/20
+ - 60s - loss: 0.2374 - accuracy: 0.9155 - val_loss: 0.1163 - val_accuracy: 0.9637
+Epoch 19/20
+ - 59s - loss: 0.2686 - accuracy: 0.9105 - val_loss: 0.0897 - val_accuracy: 0.9803
+Epoch 20/20
+ - 59s - loss: 0.2246 - accuracy: 0.9217 - val_loss: 0.1008 - val_accuracy: 0.9754
+[INFO] evaluating network...
+                            precision    recall  f1-score   support
+
+Pepper_Bell_Bacterial_spot       1.00      0.95      0.97       239
+       Pepper_Bell_healthy       1.00      0.98      0.99       380
+       Potato_Early_blight       0.96      1.00      0.98       250
+            Potato_Healthy       0.95      1.00      0.97        38
+        Potato_Late_blight       0.99      0.99      0.99       250
+     Tomato_Bacterial_spot       0.99      1.00      0.99       532
+       Tomato_Early_blight       1.00      0.96      0.98       250
+            Tomato_Healthy       0.99      1.00      0.99       398
+        Tomato_Late_blight       0.97      0.99      0.98       478
+          Tomato_Leaf_Mold       0.96      0.97      0.96       238
+ Tomato_Septoria_leaf_spot       0.92      0.91      0.91       443
+
+                  accuracy                           0.98      3496
+                 macro avg       0.97      0.98      0.98      3496
+              weighted avg       0.98      0.98      0.98      3496
+
+[Info] from Tomato_Septoria_leaf_spot select 265/1328 samples for incremental learning...
+265
+[Info] loading images from "Tomato_Spider_mites_Two_spotted_spider_mite".........
+[Info] loading from        "Tomato_Spider_mites_Two_spotted_spider_mite" 1676 images
+[Info] training network for 12 classes....
+Train on 4753 samples, validate on 3915 samples
+Epoch 1/20
+ - 78s - loss: 0.9717 - accuracy: 0.7008 - val_loss: 0.3815 - val_accuracy: 0.8761
+Epoch 2/20
+ - 65s - loss: 0.4899 - accuracy: 0.8491 - val_loss: 0.3864 - val_accuracy: 0.8692
+Epoch 3/20
+ - 64s - loss: 0.3980 - accuracy: 0.8677 - val_loss: 0.2316 - val_accuracy: 0.9259
+Epoch 4/20
+ - 65s - loss: 0.3977 - accuracy: 0.8651 - val_loss: 0.2432 - val_accuracy: 0.9124
+Epoch 5/20
+ - 65s - loss: 0.2989 - accuracy: 0.9020 - val_loss: 0.1981 - val_accuracy: 0.9369
+Epoch 6/20
+ - 60s - loss: 0.3080 - accuracy: 0.8980 - val_loss: 0.3388 - val_accuracy: 0.8981
+Epoch 7/20
+ - 60s - loss: 0.2796 - accuracy: 0.9070 - val_loss: 0.1794 - val_accuracy: 0.9397
+Epoch 8/20
+ - 53s - loss: 0.2655 - accuracy: 0.9116 - val_loss: 0.2241 - val_accuracy: 0.9259
+Epoch 9/20
+ - 50s - loss: 0.2631 - accuracy: 0.9125 - val_loss: 0.2631 - val_accuracy: 0.9172
+Epoch 10/20
+ - 49s - loss: 0.2522 - accuracy: 0.9118 - val_loss: 0.1648 - val_accuracy: 0.9487
+Epoch 11/20
+ - 48s - loss: 0.2348 - accuracy: 0.9249 - val_loss: 0.1318 - val_accuracy: 0.9533
+Epoch 12/20
+ - 48s - loss: 0.2355 - accuracy: 0.9171 - val_loss: 0.1204 - val_accuracy: 0.9622
+Epoch 13/20
+ - 48s - loss: 0.1817 - accuracy: 0.9379 - val_loss: 0.1492 - val_accuracy: 0.9530
+Epoch 14/20
+ - 49s - loss: 0.2589 - accuracy: 0.9177 - val_loss: 0.1457 - val_accuracy: 0.9556
+Epoch 15/20
+ - 53s - loss: 0.1810 - accuracy: 0.9367 - val_loss: 0.1393 - val_accuracy: 0.9530
+Epoch 16/20
+ - 52s - loss: 0.1817 - accuracy: 0.9369 - val_loss: 0.1122 - val_accuracy: 0.9637
+Epoch 17/20
+ - 49s - loss: 0.1998 - accuracy: 0.9329 - val_loss: 0.1231 - val_accuracy: 0.9604
+Epoch 18/20
+ - 50s - loss: 0.1989 - accuracy: 0.9350 - val_loss: 0.0711 - val_accuracy: 0.9814
+Epoch 19/20
+ - 48s - loss: 0.1649 - accuracy: 0.9442 - val_loss: 0.1476 - val_accuracy: 0.9517
+Epoch 20/20
+ - 49s - loss: 0.1737 - accuracy: 0.9392 - val_loss: 0.0913 - val_accuracy: 0.9750
+[INFO] evaluating network...
+                                             precision    recall  f1-score   support
+
+                 Pepper_Bell_Bacterial_spot       1.00      0.99      1.00       239
+                        Pepper_Bell_healthy       1.00      0.99      1.00       380
+                        Potato_Early_blight       0.98      1.00      0.99       250
+                             Potato_Healthy       0.95      1.00      0.97        38
+                         Potato_Late_blight       1.00      0.99      1.00       250
+                      Tomato_Bacterial_spot       1.00      0.99      0.99       532
+                        Tomato_Early_blight       1.00      0.95      0.98       250
+                             Tomato_Healthy       0.91      1.00      0.95       398
+                         Tomato_Late_blight       0.99      0.99      0.99       478
+                           Tomato_Leaf_Mold       0.93      0.98      0.96       238
+                  Tomato_Septoria_leaf_spot       1.00      0.92      0.96       443
+Tomato_Spider_mites_Two_spotted_spider_mite       0.93      0.92      0.92       419
+
+                                   accuracy                           0.97      3915
+                                  macro avg       0.97      0.98      0.98      3915
+                               weighted avg       0.98      0.97      0.98      3915
+
+[Info] from Tomato_Spider_mites_Two_spotted_spider_mite select 251/1257 samples for incremental learning...
+251
+[Info] loading images from "Tomato_Target_Spot".........
+[Info] loading from        "Tomato_Target_Spot" 1404 images
+[Info] training network for 13 classes....
+Train on 4968 samples, validate on 4266 samples
+Epoch 1/20
+ - 70s - loss: 1.0217 - accuracy: 0.6727 - val_loss: 0.6053 - val_accuracy: 0.8043
+Epoch 2/20
+ - 51s - loss: 0.5867 - accuracy: 0.7975 - val_loss: 0.4063 - val_accuracy: 0.8589
+Epoch 3/20
+ - 52s - loss: 0.4800 - accuracy: 0.8335 - val_loss: 0.3113 - val_accuracy: 0.8938
+Epoch 4/20
+ - 55s - loss: 0.4511 - accuracy: 0.8416 - val_loss: 0.2322 - val_accuracy: 0.9161
+Epoch 5/20
+ - 51s - loss: 0.4112 - accuracy: 0.8609 - val_loss: 0.2567 - val_accuracy: 0.9128
+Epoch 6/20
+ - 72s - loss: 0.3613 - accuracy: 0.8716 - val_loss: 0.2237 - val_accuracy: 0.9292
+Epoch 7/20
+ - 64s - loss: 0.3816 - accuracy: 0.8674 - val_loss: 0.3559 - val_accuracy: 0.8847
+Epoch 8/20
+ - 67s - loss: 0.3869 - accuracy: 0.8643 - val_loss: 0.3450 - val_accuracy: 0.8917
+Epoch 9/20
+ - 69s - loss: 0.3679 - accuracy: 0.8766 - val_loss: 0.1840 - val_accuracy: 0.9400
+Epoch 10/20
+ - 65s - loss: 0.3279 - accuracy: 0.8790 - val_loss: 0.2415 - val_accuracy: 0.9182
+Epoch 11/20
+ - 64s - loss: 0.2994 - accuracy: 0.8949 - val_loss: 0.2851 - val_accuracy: 0.9032
+Epoch 12/20
+ - 64s - loss: 0.3068 - accuracy: 0.8963 - val_loss: 0.1595 - val_accuracy: 0.9463
+Epoch 13/20
+ - 64s - loss: 0.2896 - accuracy: 0.8986 - val_loss: 0.2462 - val_accuracy: 0.9189
+Epoch 14/20
+ - 63s - loss: 0.3170 - accuracy: 0.8895 - val_loss: 0.2979 - val_accuracy: 0.9025
+Epoch 15/20
+ - 64s - loss: 0.3771 - accuracy: 0.8907 - val_loss: 0.1542 - val_accuracy: 0.9484
+Epoch 16/20
+ - 52s - loss: 0.3155 - accuracy: 0.8885 - val_loss: 0.1503 - val_accuracy: 0.9501
+Epoch 17/20
+ - 50s - loss: 0.2545 - accuracy: 0.9038 - val_loss: 0.2140 - val_accuracy: 0.9355
+Epoch 18/20
+ - 50s - loss: 0.2832 - accuracy: 0.9012 - val_loss: 0.1788 - val_accuracy: 0.9461
+Epoch 19/20
+ - 50s - loss: 0.2677 - accuracy: 0.9044 - val_loss: 0.1786 - val_accuracy: 0.9459
+Epoch 20/20
+ - 50s - loss: 0.2642 - accuracy: 0.9050 - val_loss: 0.1695 - val_accuracy: 0.9459
+[INFO] evaluating network...
+                                             precision    recall  f1-score   support
+
+                 Pepper_Bell_Bacterial_spot       1.00      0.97      0.98       239
+                        Pepper_Bell_healthy       1.00      0.99      1.00       380
+                        Potato_Early_blight       0.98      1.00      0.99       250
+                             Potato_Healthy       0.97      1.00      0.99        38
+                         Potato_Late_blight       1.00      0.98      0.99       250
+                      Tomato_Bacterial_spot       0.96      1.00      0.98       532
+                        Tomato_Early_blight       0.99      0.95      0.97       250
+                             Tomato_Healthy       0.83      1.00      0.91       398
+                         Tomato_Late_blight       0.98      1.00      0.99       478
+                           Tomato_Leaf_Mold       0.94      0.99      0.96       238
+                  Tomato_Septoria_leaf_spot       0.98      0.87      0.92       443
+Tomato_Spider_mites_Two_spotted_spider_mite       0.96      0.83      0.89       419
+                         Tomato_Target_Spot       0.80      0.80      0.80       351
+
+                                   accuracy                           0.95      4266
+                                  macro avg       0.95      0.95      0.95      4266
+                               weighted avg       0.95      0.95      0.95      4266
+
+[Info] from Tomato_Target_Spot select 210/1053 samples for incremental learning...
+210
+[Info] loading images from "Tomato_Tomato_Mosaic_virus".........
+[Info] loading from        "Tomato_Tomato_Mosaic_virus" 373 images
+[Info] training network for 14 classes....
+Train on 4545 samples, validate on 4360 samples
+Epoch 1/20
+ - 78s - loss: 1.0004 - accuracy: 0.6997 - val_loss: 0.3779 - val_accuracy: 0.8789
+Epoch 2/20
+ - 51s - loss: 0.6098 - accuracy: 0.8015 - val_loss: 0.2606 - val_accuracy: 0.9149
+Epoch 3/20
+ - 50s - loss: 0.4979 - accuracy: 0.8308 - val_loss: 0.2807 - val_accuracy: 0.9080
+Epoch 4/20
+ - 49s - loss: 0.4704 - accuracy: 0.8458 - val_loss: 0.3232 - val_accuracy: 0.8915
+Epoch 5/20
+ - 48s - loss: 0.3864 - accuracy: 0.8752 - val_loss: 0.3863 - val_accuracy: 0.8663
+Epoch 6/20
+ - 49s - loss: 0.4030 - accuracy: 0.8706 - val_loss: 0.3493 - val_accuracy: 0.8865
+Epoch 7/20
+ - 51s - loss: 0.5247 - accuracy: 0.8332 - val_loss: 0.3771 - val_accuracy: 0.8706
+Epoch 8/20
+ - 48s - loss: 0.2994 - accuracy: 0.8946 - val_loss: 0.2606 - val_accuracy: 0.9161
+Epoch 9/20
+ - 48s - loss: 0.2956 - accuracy: 0.8981 - val_loss: 0.2060 - val_accuracy: 0.9342
+Epoch 10/20
+ - 47s - loss: 0.2896 - accuracy: 0.9012 - val_loss: 0.1769 - val_accuracy: 0.9406
+Epoch 11/20
+ - 47s - loss: 0.2658 - accuracy: 0.9091 - val_loss: 0.1495 - val_accuracy: 0.9525
+Epoch 12/20
+ - 47s - loss: 0.2885 - accuracy: 0.9080 - val_loss: 0.3076 - val_accuracy: 0.9087
+Epoch 13/20
+ - 48s - loss: 0.2992 - accuracy: 0.8999 - val_loss: 0.1554 - val_accuracy: 0.9507
+Epoch 14/20
+ - 50s - loss: 0.2441 - accuracy: 0.9149 - val_loss: 0.1142 - val_accuracy: 0.9658
+Epoch 15/20
+ - 50s - loss: 0.2607 - accuracy: 0.9113 - val_loss: 0.2057 - val_accuracy: 0.9337
+Epoch 16/20
+ - 51s - loss: 0.2355 - accuracy: 0.9195 - val_loss: 0.1001 - val_accuracy: 0.9700
+Epoch 17/20
+ - 50s - loss: 0.2659 - accuracy: 0.9094 - val_loss: 0.1810 - val_accuracy: 0.9378
+Epoch 18/20
+ - 50s - loss: 0.2203 - accuracy: 0.9219 - val_loss: 0.1693 - val_accuracy: 0.9452
+Epoch 19/20
+ - 50s - loss: 0.2394 - accuracy: 0.9217 - val_loss: 0.1558 - val_accuracy: 0.9502
+Epoch 20/20
+ - 48s - loss: 0.2589 - accuracy: 0.9144 - val_loss: 0.1973 - val_accuracy: 0.9360
+[INFO] evaluating network...
+                                             precision    recall  f1-score   support
+
+                 Pepper_Bell_Bacterial_spot       1.00      0.95      0.97       239
+                        Pepper_Bell_healthy       1.00      0.98      0.99       380
+                        Potato_Early_blight       0.96      1.00      0.98       250
+                             Potato_Healthy       1.00      0.97      0.99        38
+                         Potato_Late_blight       1.00      0.96      0.98       250
+                      Tomato_Bacterial_spot       0.91      1.00      0.95       532
+                        Tomato_Early_blight       0.94      0.97      0.95       250
+                             Tomato_Healthy       0.83      1.00      0.91       398
+                         Tomato_Late_blight       0.97      0.98      0.97       478
+                           Tomato_Leaf_Mold       0.95      1.00      0.97       238
+                  Tomato_Septoria_leaf_spot       0.95      0.89      0.92       443
+Tomato_Spider_mites_Two_spotted_spider_mite       0.92      0.84      0.88       419
+                         Tomato_Target_Spot       0.94      0.68      0.79       351
+                 Tomato_Tomato_Mosaic_virus       0.80      0.95      0.87        94
+
+                                   accuracy                           0.94      4360
+                                  macro avg       0.94      0.94      0.94      4360
+                               weighted avg       0.94      0.94      0.93      4360
+
+[Info] from Tomato_Tomato_Mosaic_virus select 55/279 samples for incremental learning...
+55
+[Info] loading images from "Tomato_Tomato_YellowLeaf_Curl_Virus".........
+[Info] loading from        "Tomato_Tomato_YellowLeaf_Curl_Virus" 3208 images
+[Info] training network for 15 classes....
+Train on 6766 samples, validate on 5162 samples
+Epoch 1/20
+ - 110s - loss: 1.2340 - accuracy: 0.6289 - val_loss: 0.5939 - val_accuracy: 0.8061
+Epoch 2/20
+ - 66s - loss: 0.5906 - accuracy: 0.8150 - val_loss: 0.5034 - val_accuracy: 0.8295
+Epoch 3/20
+ - 65s - loss: 0.4730 - accuracy: 0.8467 - val_loss: 0.3025 - val_accuracy: 0.9018
+Epoch 4/20
+ - 65s - loss: 0.3808 - accuracy: 0.8766 - val_loss: 0.1643 - val_accuracy: 0.9477
+Epoch 5/20
+ - 65s - loss: 0.3907 - accuracy: 0.8801 - val_loss: 0.2997 - val_accuracy: 0.8995
+Epoch 6/20
+ - 65s - loss: 0.3611 - accuracy: 0.8837 - val_loss: 0.1948 - val_accuracy: 0.9374
+Epoch 7/20
+ - 64s - loss: 0.3455 - accuracy: 0.8877 - val_loss: 0.1549 - val_accuracy: 0.9481
+Epoch 8/20
+ - 64s - loss: 0.3269 - accuracy: 0.8973 - val_loss: 0.1906 - val_accuracy: 0.9368
+Epoch 9/20
+ - 66s - loss: 0.2824 - accuracy: 0.9050 - val_loss: 0.1671 - val_accuracy: 0.9463
+Epoch 10/20
+ - 67s - loss: 0.2729 - accuracy: 0.9116 - val_loss: 0.2328 - val_accuracy: 0.9326
+Epoch 11/20
+ - 64s - loss: 0.2873 - accuracy: 0.9072 - val_loss: 0.1744 - val_accuracy: 0.9398
+Epoch 12/20
+ - 64s - loss: 0.2660 - accuracy: 0.9128 - val_loss: 0.3216 - val_accuracy: 0.9031
+Epoch 13/20
+ - 64s - loss: 0.2671 - accuracy: 0.9134 - val_loss: 0.1964 - val_accuracy: 0.9442
+Epoch 14/20
+ - 65s - loss: 0.2585 - accuracy: 0.9212 - val_loss: 0.1378 - val_accuracy: 0.9562
+Epoch 15/20
+ - 64s - loss: 0.2352 - accuracy: 0.9271 - val_loss: 0.1243 - val_accuracy: 0.9593
+Epoch 16/20
+ - 64s - loss: 0.2260 - accuracy: 0.9262 - val_loss: 0.1646 - val_accuracy: 0.9456
+Epoch 17/20
+ - 64s - loss: 0.2318 - accuracy: 0.9252 - val_loss: 0.1629 - val_accuracy: 0.9489
+Epoch 18/20
+ - 64s - loss: 0.2137 - accuracy: 0.9322 - val_loss: 0.0891 - val_accuracy: 0.9719
+Epoch 19/20
+ - 66s - loss: 0.2205 - accuracy: 0.9310 - val_loss: 0.1554 - val_accuracy: 0.9483
+Epoch 20/20
+ - 65s - loss: 0.2156 - accuracy: 0.9270 - val_loss: 0.0875 - val_accuracy: 0.9723
+[INFO] evaluating network...
+                                             precision    recall  f1-score   support
+
+                 Pepper_Bell_Bacterial_spot       1.00      0.98      0.99       239
+                        Pepper_Bell_healthy       1.00      1.00      1.00       380
+                        Potato_Early_blight       0.99      0.99      0.99       250
+                             Potato_Healthy       1.00      1.00      1.00        38
+                         Potato_Late_blight       1.00      1.00      1.00       250
+                      Tomato_Bacterial_spot       0.99      0.96      0.98       532
+                        Tomato_Early_blight       1.00      0.99      0.99       250
+                             Tomato_Healthy       0.95      1.00      0.98       398
+                         Tomato_Late_blight       0.99      0.98      0.99       478
+                           Tomato_Leaf_Mold       0.97      1.00      0.98       238
+                  Tomato_Septoria_leaf_spot       0.99      0.97      0.98       443
+Tomato_Spider_mites_Two_spotted_spider_mite       0.89      0.98      0.93       419
+                         Tomato_Target_Spot       0.97      0.84      0.90       351
+                 Tomato_Tomato_Mosaic_virus       0.98      0.97      0.97        94
+        Tomato_Tomato_YellowLeaf_Curl_Virus       0.96      0.97      0.97       802
+
+                                   accuracy                           0.97      5162
+                                  macro avg       0.98      0.98      0.98      5162
+                               weighted avg       0.97      0.97      0.97      5162
+
+
+Process finished with exit code 0
