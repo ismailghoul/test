@@ -76,7 +76,7 @@ def update_model(model, classes_size, new_weights_initializer='average'):
     
     return model
 
-def reduce_class_data(trainX, trainY, current_label, labels, model, data_size=0.5, data_selector='random'):
+def reduce_class_data(trainX, trainY, current_label, labels, model, data_size=0.2, data_selector='random'):
     # predict traning data
     predictions = model.predict(trainX)
     # fetch data for the current label or class$
